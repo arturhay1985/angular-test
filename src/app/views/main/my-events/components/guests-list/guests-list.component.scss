@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    // padding: 20px!important;
+    th{
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    td, th {
+        padding: 20px;
+        text-align: left;
+        white-space: nowrap;
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #a2a2a2;
+
+        }
+    }
+  
+}

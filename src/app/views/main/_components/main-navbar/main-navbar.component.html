@@ -1,0 +1,11 @@
+<nav class="navbar">
+    <div class="navbar-container main-container">
+        <ul class="navbar-item-list">
+            <li class="navbar-item" *ngFor="let item of navbarItems" routerLinkActive="active-link">
+                <a [routerLink]="item.link">
+                    {{item.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

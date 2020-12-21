@@ -1,0 +1,99 @@
+<form [formGroup]="groomBrideGroupForm" >
+    <div class="box-container">
+        <div class="box-title">
+            <span>Groom and bride account email</span>
+        </div>
+        <div formGroupName="groomBride" class="box-body">
+            <div class="form-group">
+                <label class="label" for="email">Email</label>
+                <input type="text" id="email"  formControlName="email">
+            </div>
+            <div class="form-group">
+                <label class="label"  for="name">Wedding name</label>
+                <input type="text" id="name" formControlName="name">
+            </div>
+            <div class="form-group"></div>
+        </div>
+    </div>
+
+    <div formGroupName="groomInfo" class="box-container">
+        <div class="box-title">
+            <span>Groom information</span>
+        </div>
+        <div class="box-body">
+            <div class="form-group">
+                <label class="label"  for="groomFirstName">First name</label>
+                <input type="text" id="groomFirstName" formControlName="groomFirstName" />
+            </div>
+            <div class="form-group">
+                <label class="label" for="groomMiddleName">Middle name</label>
+                <input type="text" id="groomMiddleName" formControlName="groomMiddleName" />
+            </div>
+            <div class="form-group">
+                <label class="label" for="groomLastName">Last name</label>
+                <input type="text" id="groomLastName" formControlName="groomLastName" />
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="form-group">
+                <label class="label" for="groomBirth">Date of birth</label>
+                <input type="date" id="groomBirth" formControlName="groomBirth">
+            </div>
+            <div class="form-group">
+                <label class="label" for="groomPhoneNumber">Phone number</label>
+                <input type="text" id="groomPhoneNumber" formControlName="groomPhoneNumber" appDigitOnly>
+            </div>
+            <div class="form-group">
+                <label class="label" for="groomGender">Gender</label>
+                <div class="select">
+                    <select id="groomGender" formControlName="groomGender">
+                        <option value="" [selected]="true">Choose gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div formGroupName="brideInfo" class="box-container">
+        <div class="box-title">
+            <span>Bride information</span>
+        </div>
+        <div class="box-body">
+            <div class="form-group">
+                <label class="label" for="brideFirstName">First name</label>
+                <input type="text" id="brideFirstName" formControlName="brideFirstName" />
+            </div>
+            <div class="form-group">
+                <label class="label" for="brideMiddleName">Middle name</label>
+                <input type="text" id="brideMiddleName"  formControlName="brideMiddleName"/>
+            </div>
+            <div class="form-group">
+                <label class="label" for="brideLastName">Last name</label>
+                <input  id="brideLastName" formControlName="brideLastName" type="text" />
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="form-group">
+                <label class="label" for="bridebirth">Date of birth</label>
+                <input type="date" id="bridebirth" formControlName="bridebirth">
+            </div>
+            <div class="form-group">
+                <label class="label" for="bridePhoneNumber">Phone number</label>
+                <input type="text" id="bridePhoneNumber" formControlName="bridePhoneNumber" appDigitOnly>
+            </div>
+            <div class="form-group">
+                <label class="label" for="brideGender">Gender</label>
+                <div class="select">
+                    <select id="brideGender" formControlName="brideGender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

@@ -1,0 +1,63 @@
+<div class="box-container">
+    <div class="box-title">
+        <span>Vendor</span>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="../../../../assets/images/salon.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Unique Spa Salon and pool</span>
+                </div>
+                <div class="card-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy ...
+                </div>
+            </div>
+            <div class="card-statistic">
+                <span>12 product /sercvices</span>
+            </div>
+        </div>
+        <div class="h-line"></div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="../../../../assets/images/roses.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Unique Spa Salon and pool</span>
+                </div>
+                <div class="card-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy ...
+                </div>
+            </div>
+            <div class="card-statistic">
+                <span>12 product /sercvices</span>
+            </div>
+        </div>
+        <div class="h-line"></div>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="isShowCompletedModal">
+    <div class="modal-container">
+        <div class="modal-image">
+            <img width="101px" height="116px" src="../../../../assets/images/calendar-hearth.jpg" alt="">
+        </div>
+        <div class="modal-title">
+            <span>Event created</span>
+        </div>
+        <div class="modal-description">
+            <span>
+                Your event was successfully added to your schedule
+            </span>
+        </div>
+        <button class="btn btn-submit cursor-pointer" (click)="onClickClose()">Close</button>
+    </div>
+</div>
