@@ -1,0 +1,11 @@
+<div class="step-container" [ngSwitch]="activeStep">
+    <app-groom-bridge-account *ngSwitchCase="1"></app-groom-bridge-account>
+    <app-event-description *ngSwitchCase="2"></app-event-description>
+    <app-guests-list *ngSwitchCase="3"></app-guests-list>
+    <app-vendor *ngSwitchCase="4"></app-vendor>
+</div>
+
+<div class="actions">
+    <button class="btn prev" (click)="onClickPrev()" *ngIf="activeStep!==1">Prev</button>
+    <button class="btn next"  (click)="onClickNext()">{{ activeStep==4?"Create event": "Next" }}</button>
+</div>

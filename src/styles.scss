@@ -1,0 +1,290 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto" !important;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1395px;
+    margin: 0 auto;
+}
+
+.form-input {
+    width: 365px;
+    height: 54px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #c5c5c5;
+    border-radius: 18px;
+    outline: none;
+    display: flex;
+    padding: 12px 16px;
+    font-family: 18px;
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input[type="checkbox"] + span {
+    display: inline-block;
+    vertical-align: middle;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+label * {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+
+    + span {
+        font: normal normal normal 16px/21px Segoe UI;
+        color: #000000;
+    }
+}
+
+label:hover span {
+    &::before {
+        -moz-box-shadow: 0 0 2px #ccc;
+        -webkit-box-shadow: 0 0 2px #ccc;
+        box-shadow: 0 0 2px #ccc;
+    }
+
+    color: #000;
+}
+
+input[type="checkbox"] {
+    + span::before {
+        content: "";
+        width: 21px;
+        height: 21px;
+        margin: 0 12px 0 0;
+        border: solid 1px #b8b8b8;
+        line-height: 21px;
+        text-align: center;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background: #ffffff;
+    }
+
+    &:checked {
+        + span::before {
+            color: #666;
+        }
+
+        + span::before {
+            content: "\2714";
+            font-size: 18px;
+        }
+    }
+
+    + span::before {
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+    }
+}
+
+.checkbox-text {
+    color: #000;
+}
+
+.btn {
+    height: 42px;
+    border-radius: 21px;
+    transition: all 0.3s;
+}
+.btn-succes {
+    width: 215px;
+    background: #009e89;
+    border: none;
+    color: white;
+    &:hover {
+        background: #009e99;
+    }
+}
+
+.box {
+    &-container {
+        .box-title {
+            margin: 83px 0 0px;
+            span{
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+        }
+        .box-body {
+            display: flex;
+            .form-group {
+                -ms-flex: 1;
+                flex: 1;
+                margin: 38px 0 0;
+                .row {
+                    display: flex;
+                    align-items: center;
+                    padding: 16px 0;
+
+                    label {
+                        display: block;
+                        height: 100%;
+                        margin: 0 0 6px;
+                    }
+                }
+                .label {
+                    display: block;
+                    margin-bottom: 6px;
+                    cursor: pointer;
+                }
+                input[type="text"],
+                input[type="date"] {
+                    background: #ffffff 0% 0% no-repeat padding-box;
+                    border: 1px solid #c5c5c5;
+                    border-radius: 18px;
+                    height: 54px;
+                    width: calc(100% - 43px);
+                    letter-spacing: 0px;
+                    color: #a2a2a2;
+                    padding: 15px 10px 18px 21px;
+                    .select-field {
+                        // todo
+                    }
+                }
+            }
+        }
+        .row {
+            .card {
+                display: flex;
+                align-items: center;
+                .image {
+                    img {
+                        width: 110px;
+                        height: 110px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+
+                        box-shadow: 0px 3px 21px #00000029;
+                        border-radius: 16px;
+                    }
+                }
+                .card-content {
+                    margin: 0 34px;
+                    width: 47%;
+                    .card-title {
+                        margin-bottom: 10px;
+                        span {
+                        }
+                    }
+                    .card-description {
+                        span {
+                        }
+                    }
+                }
+                .card-statistic {
+                    margin-left: 85px;
+                    span {
+                    }
+                }
+            }
+            .h-line {
+                margin: 27px 0;
+                box-shadow: 0px 1px 1px #00000029;
+                width: 100%;
+                height: 1px;
+            }
+        }
+    }
+}
+
+.actions {
+    padding: 38px 0;
+    .prev {
+        width: 172px;
+        color: #ee386f;
+        border: 2px solid #ee386f;
+        background: white;
+        margin-right: 18px;
+        &:hover {
+            color: #ffffff;
+            background: #ee386f;
+        }
+    }
+    .next {
+        width: 215px;
+        color: #ffffff;
+        background: #ee386f;
+        border: 2px solid #ee386f;
+        &:hover {
+            color: #ee386f;
+            background: white;
+        }
+    }
+}
+
+.inline {
+    display: flex;
+}
+
+.select {
+    position: relative;
+}
+
+.select select,
+.select input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #c5c5c5;
+    border-radius: 18px;
+    height: 54px;
+    width: calc(100% - 43px);
+    letter-spacing: 0px;
+    color: #a2a2a2;
+    padding: 15px 10px 18px 21px;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #444;
+}
+
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #707070 transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 57px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red !important;
+}
+
+select.ng-invalid.ng-touched {
+    border: 1px solid red !important;
+}
+option {
+    padding: 5px 0;
+    font-size: 140%;
+}

@@ -1,0 +1,40 @@
+<section class="step-progress">
+    <div class="step-progress-container">
+        <div class="progress-line">
+            <div class="progress-line-inner" #progressLine></div>
+        </div>
+        <div class="steps">
+            <div class="step-item" [class.active]="activeStepNum>=1">
+                <div class="step-num">
+                    <span></span>
+                </div>
+                <p class="step-label step-first">STEP 1</p>
+                <p class="step-label">Groom and bride</p>
+            </div>
+            <div class="step-item" [class.active]="activeStepNum>=2">
+                <div class="step-num">
+                    <span></span>
+                </div>
+                <p class="step-label">STEP 2</p>
+                <p class="step-label">Event description</p>
+            </div>
+            <div class="step-item" [class.active]="activeStepNum>=3">
+                <div class="step-num">
+                    <span></span>
+                </div>
+                <p class="step-label">STEP 3</p>
+                <p class="step-label">Guest list</p>
+            </div>
+            <div class="step-item" [class.active]="activeStepNum>=4">
+                <div class="step-num">
+                    <span></span>
+                </div>
+                <p class="step-label">STEP 4</p>
+                <p class="step-label">Vendors</p>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>

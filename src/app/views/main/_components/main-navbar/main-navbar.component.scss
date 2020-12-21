@@ -1,0 +1,37 @@
+.navbar {
+    box-shadow: 0px 3px 18px #00000029;
+    opacity: 1;
+    .navbar-container {
+        .navbar-item-list {
+            display: flex;
+            justify-content: space-around;
+            .navbar-item {
+                display: flex;
+                position: relative;
+                a {
+                    white-space: nowrap;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    padding: 147px 10px 17px;
+                }
+                &::after {
+                    transition: all 0.3s;
+                    position: absolute;
+                    height: 2px;
+                    background: red;
+                    width: 0;
+                    visibility: hidden;
+                    content: "";
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.active-link {
+    &::after {
+        visibility: inherit !important;
+        width: 100% !important;
+    }
+}

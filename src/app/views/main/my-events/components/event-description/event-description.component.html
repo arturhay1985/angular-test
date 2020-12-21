@@ -1,0 +1,68 @@
+<div>
+    <form [formGroup]="eventDescriptionForm">
+        <div class="box-container">
+            <div class="box-title">
+                <span>Wedding information</span>
+            </div>
+            <div class="box-body">
+                <div class="form-group">
+                    <label class="label" for="">Ceremony type</label>
+                    <div class="select">
+                        <select formControlName="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="">Hotel</label>
+                    <div class="select">
+                        <select formControlName="hotel">
+                            <option value="male">Aleqsandrapol</option>
+                            <option value="female">Gyumri</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box-body">
+                <div class="form-group">
+                    <label class="label" for="">Check in date</label>
+                    <input type="date" formControlName="checkInDate">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="">Check out date</label>
+                    <input type="date" formControlName="checkOutDate">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box-body">
+                <div class="form-group">
+                    <div class="row">
+                        <label>
+                            <input type="checkbox" formControlName="honeymoon" />
+                            <span class="checkbox-text">Honeymoon</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>
+                            <input type="checkbox" formControlName="bookedRoom" />
+                            <span class="checkbox-text">Booked room</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box-body">
+                <div class="form-group">
+                    <label class="label" for="">Room number</label>
+                    <input type="text" formControlName="roomNumber">
+                </div>
+                <div class="form-group"></div>
+            </div>
+        </div>
+    </form>
+</div>
